@@ -10,14 +10,14 @@
 
 .homeCircleImgTop {
   position: absolute;
-  left: -40%;
-  top: -80%;
+  left: -500px;
+  top: -700px;
   z-index: -1;
 }
 .homeCircleImgBottom {
   position: absolute;
-  right: -40%;
-  bottom: -80%;
+  right: -500px;
+  bottom: -700px;
   z-index: -1;
 }
 
@@ -177,7 +177,7 @@
 
   .warriorCards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(50px, 100px));
+    grid-template-columns: repeat(auto-fit, minmax(50px, 90px));
     gap: 1.5rem 1rem;
   }
 }
@@ -203,5 +203,11 @@
     width: 50%;
     max-width: 150px;
     margin-bottom: -3%;
+  }
+}
+
+@media (max-width: 400px) {
+  .warriorCards {
+    grid-template-columns: 1fr auto;
   }
 }
