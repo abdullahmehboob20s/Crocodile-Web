@@ -1,0 +1,68 @@
+.itemDetail_card {
+  border: 2px solid #424750;
+  background: linear-gradient(180deg, #353a40 -56.47%, #16171b 100%);
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3),
+    -3px -3px 6px rgba(255, 255, 255, 0.08);
+  border-radius: 11px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.itemDetails_content {
+  flex: 1;
+}
+
+.itemDetail_card > div:last-child {
+  align-self: flex-start;
+  padding-top: 0.7rem;
+}
+
+.itemDetail_card_imgWrapper {
+  width: 72.36px;
+  height: 72.36px;
+  position: relative;
+  z-index: 5;
+  padding: 0.8rem;
+  margin-right: 10px;
+}
+
+.itemDetail_card_imgWrapper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: linear-gradient(327.43deg, #32383e -77.68%, #17191c 87.35%);
+  box-shadow: -4.66817px -2.33409px 18.6727px rgba(195, 200, 205, 0.07),
+    4.66817px 4.66817px 21.0068px rgba(0, 0, 0, 0.44);
+  filter: blur(2.33409px);
+  border-radius: 38.5124px;
+  z-index: -1;
+}
+
+.itemDetail_card_imgWrapper_holder {
+  height: 100%;
+  border-radius: 50%;
+  background: #800000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+}
+
+.itemDetail_card_imgWrapper_holder img {
+  width: 100%;
+}
+
+.itemDetails_bin {
+  width: 27.26px;
+  height: 27.26px;
+  background: #191a1d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}

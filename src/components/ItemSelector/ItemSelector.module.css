@@ -1,0 +1,65 @@
+.itemSelector {
+  background: linear-gradient(180deg, #353a40 -56.47%, #16171b 100%);
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3),
+    -3px -3px 6px rgba(255, 255, 255, 0.08);
+  border-radius: 34px;
+  padding: 20px 0;
+  border: 2px solid #353a40;
+}
+
+.itemSelectorHeader {
+  display: flex;
+  align-items: center;
+  padding: 0 22px;
+  justify-content: space-between;
+  z-index: 10;
+  position: relative;
+}
+
+.itemSelectorHeader > button {
+  min-width: 55.08px;
+  min-height: 55.08px;
+
+  position: relative;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(320.66deg, #2f353a 14.75%, #1c1f22 84.81%);
+  /* box-shadow: inset 0 0 5px ; */
+  border: 2px solid #31343c;
+}
+
+.itemSelectorHeader > button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+
+  background: linear-gradient(318.21deg, #2c3036 14.05%, #31343c 85.29%);
+  box-shadow: 6.32115px 6.32115px 27.0906px #1f2427,
+    -6.32115px -6.32115px 27.0906px #485057;
+
+  background: linear-gradient(320.66deg, #2f353a 14.75%, #1c1f22 84.81%);
+  background: linear-gradient(320.66deg, #2f353a 14.75%, #1c1f22 84.81%);
+  filter: blur(3.61208px);
+  z-index: -1;
+}
+
+.itemSelectorHeader div {
+  padding: 0 1rem;
+}
+
+.itemSelectorImgWrapper {
+  /* display: flex;
+    justify-content: center; */
+  padding: 1rem 0;
+}
+
+.itemSelectorImgWrapper {
+  height: 220px;
+}

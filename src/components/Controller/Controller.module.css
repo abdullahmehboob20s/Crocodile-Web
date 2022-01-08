@@ -1,0 +1,32 @@
+.controller_titles {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-bottom: 14px;
+  text-align: center;
+}
+
+.controller {
+  background: linear-gradient(180deg, #353a40 -56.47%, #16171b 100%);
+  border-radius: 38.1909px 38.1909px 45.8291px 45.8291px;
+  padding: 14px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.controller_btn {
+  width: 61.11px;
+  height: 61.11px;
+  border-radius: 50%;
+  background-color: white;
+  cursor: pointer;
+
+  box-shadow: 10.6935px 10.6935px 30.5527px rgba(16, 16, 18, 0.75),
+    -5.34673px -5.34673px 22.9146px #262e32;
+  background: linear-gradient(140.66deg, #2f353a 14.75%, #1c1f22 84.81%);
+  border: 3px solid #131314;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

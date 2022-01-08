@@ -1,0 +1,32 @@
+.warriorCard_img {
+  width: 60.21px;
+  height: 60.21px;
+  box-shadow: inset -2.15025px -2.15025px 12.9015px rgba(255, 255, 255, 0.06),
+    inset 2.15025px 3.22538px 17.202px rgba(7, 7, 9, 0.8);
+  border-radius: 17.202px;
+  position: relative;
+}
+
+.warriorCard_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.warriorCard_img button {
+  width: 27.26px;
+  height: 27.26px;
+
+  background: #191a1d;
+  border: 1px solid #8f8f8f;
+  box-sizing: border-box;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  z-index: 10;
+}

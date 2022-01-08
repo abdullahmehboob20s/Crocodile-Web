@@ -1,0 +1,158 @@
+.homeWrapper {
+  min-height: 100vh;
+  background: linear-gradient(180deg, #353a40 0%, #16171b 100%), #1d1f23;
+  position: relative;
+  z-index: 20;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.homeCircleImgTop {
+  position: absolute;
+  left: -40%;
+  top: -80%;
+  z-index: -1;
+}
+.homeCircleImgBottom {
+  position: absolute;
+  right: -40%;
+  bottom: -80%;
+  z-index: -1;
+}
+
+.homeContent {
+  padding: 40px 50px;
+  display: grid;
+  grid-template-columns: 282px 1fr 282px;
+  gap: 50px;
+  flex: 1;
+  align-content: center;
+}
+
+.homeContent > div {
+  height: 100%;
+}
+
+.homeContent_left {
+  display: flex;
+  flex-direction: column;
+}
+
+.itemDetails {
+  border: 2px solid #424750;
+  background: linear-gradient(180deg, #353a40 -56.47%, #16171b 100%);
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3),
+    -3px -3px 6px rgba(255, 255, 255, 0.08);
+  border-radius: 34px;
+  padding: 25px 18px;
+  flex: 1;
+}
+
+.itemDetails > div:not(:last-child) {
+  margin-bottom: 21px;
+}
+
+.homeContent_center {
+  background: linear-gradient(
+    94.6deg,
+    #2f3439 -72.68%,
+    #26292e 26.94%,
+    #17191c 185.78%
+  );
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3),
+    -5px -6px 16px rgba(195, 200, 205, 0.04);
+  border-radius: 16px;
+
+  position: relative;
+  z-index: 10;
+}
+
+.homeContent_center::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 2px solid red;
+
+  background-image: url(../../assets/images/item-preview-bg.png),
+    linear-gradient(94.6deg, #2f3439 -72.68%, #26292e 26.94%, #17191c 185.78%);
+  opacity: 0.1;
+  border-radius: 16px;
+  background-repeat: no-repeat;
+  background-size: 110% 110%;
+  background-position: center center;
+
+  z-index: -1;
+}
+
+.homeContent_center_objects {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.stage {
+  margin-left: -50px;
+  width: 60%;
+  max-width: 500px;
+}
+
+.object_on_stage {
+  width: 40%;
+  max-width: 400px;
+  z-index: 10;
+  margin-bottom: -40px;
+  animation: fadeIn linear 0.4s;
+  -webkit-animation: fadeIn linear 0.4s;
+  -moz-animation: fadeIn linear 0.4s;
+  -o-animation: fadeIn linear 0.4s;
+  -ms-animation: fadeIn linear 0.4s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.homeContent_right {
+  display: flex;
+  flex-direction: column;
+}
+
+.warriorCards {
+  flex: 1;
+  background: linear-gradient(180deg, #353a40 -56.47%, #16171b 100%);
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3),
+    -3px -3px 6px rgba(255, 255, 255, 0.08);
+  border-radius: 34px;
+  border: 2px solid #424750;
+  padding: 35px 30px;
+
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 1.5rem 1rem;
+
+  justify-content: space-between;
+  align-content: space-between;
+  margin-bottom: 56px;
+}
+
+@media (min-width: 1500px) {
+  .homeContent {
+    grid-template-columns: 20% 1fr 20%;
+  }
+}
+@media (max-width: 1400px) {
+  .homeContent {
+    gap: 30px;
+  }
+}
