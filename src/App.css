@@ -391,4 +391,5 @@ li {
 }
 .swiperWarriorCardsWrapper .swiper-container {
   /* height: 100%; */
+  padding-top: 30px;
 }
