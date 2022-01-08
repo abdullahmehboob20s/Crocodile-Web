@@ -1,8 +1,9 @@
 .controller_titles {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   margin-bottom: 14px;
-  text-align: center;
+  padding: 0 2rem;
 }
 
 .controller {

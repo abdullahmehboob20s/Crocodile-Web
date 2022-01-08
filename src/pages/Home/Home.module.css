@@ -158,3 +158,49 @@
     gap: 20px;
   }
 }
+
+@media (max-width: 1300px) {
+  .object_on_stage {
+    margin-bottom: -5%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .homeContent {
+    padding: 30px 30px;
+    grid-template-columns: 280px 1fr;
+  }
+  .homeContent_right {
+    grid-column: 1/-1;
+  }
+
+  .warriorCards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50px, 100px));
+    gap: 1.5rem 1rem;
+  }
+}
+
+@media (max-width: 760px) {
+  .homeContent {
+    padding: 30px 30px;
+    grid-template-columns: 100%;
+  }
+
+  .homeContent_center {
+    grid-row: 1/2;
+    padding: 1rem 0;
+  }
+
+  .stage {
+    width: 70%;
+    max-width: 200px;
+    margin-left: -30px;
+  }
+
+  .object_on_stage {
+    width: 50%;
+    max-width: 150px;
+    margin-bottom: -3%;
+  }
+}
