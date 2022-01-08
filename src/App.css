@@ -364,28 +364,31 @@ li {
   list-style-type: none;
 }
 
-.swiper-slide {
+.swiperParent .swiper-slide {
   display: flex;
   justify-content: center;
   align-content: center;
   width: 150px !important;
 }
 
-.swiper-slide > img {
+.swiperParent .swiper-slide > img {
   width: 100%;
   filter: contrast(0.4) saturate(0) brightness(0.5);
   opacity: 0.8;
   transition: all 0.3s ease !important;
 }
 
-.swiper-slide-shadow-left {
+.swiperParent .swiper-slide-shadow-left {
   display: none !important;
 }
-.swiper-slide-shadow-right {
+.swiperParent .swiper-slide-shadow-right {
   display: none !important;
 }
 
-.swiper-slide-active img {
+.swiperParent .swiper-slide-active img {
   filter: contrast(1) saturate(1) brightness(1);
   opacity: 1;
+}
+.swiperWarriorCardsWrapper .swiper-container {
+  /* height: 100%; */
 }

@@ -1,10 +1,10 @@
 import React from "react";
 import styles from "./ItemSelector.module.css";
-import { HiArrowLeft, HiArrowRight } from "react-icons/hi";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.css";
 import SwiperCore, { Navigation, EffectCoverflow } from "swiper";
+import NavigatorHeader from "components/NavigatorHeader/NavigatorHeader";
 SwiperCore.use([Navigation, EffectCoverflow]);
 
 function ItemSelector({
@@ -14,17 +14,13 @@ function ItemSelector({
   navigationNextRef,
 }) {
   return (
-    <div className={styles.itemSelector}>
+    <div className={`${styles.itemSelector} swiperParent`}>
       <div className={styles.itemSelectorHeader}>
-        <button className="pointer" ref={navigationPrevRef}>
-          <HiArrowLeft size={15} color="white" />
-        </button>
-        <div>
-          <p className="fs-18px white weight-6 text-center">Reptile Select</p>
-        </div>
-        <button className="pointer" ref={navigationNextRef}>
-          <HiArrowRight size={15} color="white" />
-        </button>
+        <NavigatorHeader
+          prevRef={navigationPrevRef}
+          nextRef={navigationNextRef}
+          title="Reptile Select"
+        />
       </div>
 
       <div className={styles.itemSelectorImgWrapper}>
